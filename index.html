@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6e99fc466c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Tecnologias</title>
+</head>
+<body>
+
+    <header>
+        <div class="header">
+            <figure>
+                <a href="#">
+                <img src="img/logo-teste.png" width="25px" alt="logo da bonfitness"></a>
+            </figure>
+            
+            <nav>
+                <ul>
+                    <li><a href="#">Loja Virtual</a></li>
+                    <li><a href="#">Ver Feed Instagram</a></li>
+                    <li><a href="#">Voltar ao Site</a></li>
+                    <li><button class="nav-flecha"><i class="fa-solid fa-arrow-up"></i></button></li>
+                </ul>
+            </nav>
+        </div>
+
+        <button id="flecha" class="nav-menu"><i class="fa-solid fa-bars"></i></button>
+        
+        <div>
+        </div>
+    </header>
+
+    <main>
+        <div id="conteudo-principal">
+
+            <div class="conjunto" onclick="aparaceTexto(1)" onmouseleave="retiraTexto(1)" onmouseover="apareceLinkAutor(1)" onmouseout="desapareceLinkAutor(1)">
+                <p class="texto-conjunto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dolorem sit deleniti vel aperiam labore similique fuga, cumque quo ipsam, earum soluta consectetur debitis architecto delectus assumenda corporis accusantium doloremque!</p>
+                <figure class="fig-img">
+                    <img id="primeiro" class="imagem-conteudo" src="img/imagem1.png" alt="imagem exemplo">
+                    <button class="link"><img src="img/link.png" alt=""></button>
+                    <div class="autor">
+                        <img src="img/logo-teste.png" alt=""><span>Bonfitness</span>
+                    </div>
+                    <button class="link-celular"><img src="img/link.png" alt=""></button>
+                    <button class="botao-noticia">Ler Noticia</button>
+                </figure>
+            </div>
+
+            <div class="conjunto" onclick="aparaceTexto(2)" onmouseleave="retiraTexto(2)" onmouseover="apareceLinkAutor(2)" onmouseout="desapareceLinkAutor(2)">
+                <p class="texto-conjunto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dolorem sit deleniti vel aperiam labore similique fuga, cumque quo ipsam, earum soluta consectetur debitis architecto delectus assumenda corporis accusantium doloremque!</p>
+                <figure class="fig-img">
+                    <img id="segundo" class="imagem-conteudo" src="img/imagem2.png" alt="imagem exemplo">
+                    <button class="link"><img src="img/link.png" alt=""></button>
+                    <div class="autor">
+                        <img src="img/logo-teste.png" alt=""><span>Bonfitness</span>
+                    </div>
+                    <button class="link-celular"><img src="img/link.png" alt=""></button>
+                    <button class="botao-noticia">Ler Noticia</button>
+                </figure>
+            </div>
+
+            <div class="conjunto" onclick="aparaceTexto(3)" onmouseleave="retiraTexto(3)" onmouseover="apareceLinkAutor(3)" onmouseout="desapareceLinkAutor(3)">
+                <p class="texto-conjunto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dolorem sit deleniti vel aperiam labore similique fuga, cumque quo ipsam, earum soluta consectetur debitis architecto delectus assumenda corporis accusantium doloremque!</p>
+                <figure class="fig-img">
+                    <img id="terceiro" class="imagem-conteudo" src="img/imagem3.png" alt="imagem exemplo">
+                    <button class="link"><img src="img/link.png" alt=""></button>
+                    <div class="autor">
+                        <img src="img/logo-teste.png" alt=""><span>Bonfitness</span>
+                    </div>
+                    <button class="link-celular"><img src="img/link.png" alt=""></button>
+                    <button class="botao-noticia">Ler Noticia</button>
+                </figure>
+            </div>
+
+            <div class="conjunto" onclick="aparaceTexto(4)" onmouseleave="retiraTexto(4)" onmouseover="apareceLinkAutor(4)" onmouseout="desapareceLinkAutor(4)">
+                <p class="texto-conjunto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dolorem sit deleniti vel aperiam labore similique fuga, cumque quo ipsam, earum soluta consectetur debitis architecto delectus assumenda corporis accusantium doloremque!</p>
+                <figure class="fig-img">
+                    <img id="quarto" class="imagem-conteudo" src="img/imagem4.png" alt="imagem exemplo">
+                    <button class="link"><img src="img/link.png" alt=""></button>
+                    <div class="autor">
+                        <img src="img/logo-teste.png" alt=""><span>Bonfitness</span>
+                    </div>
+                    <button class="link-celular"><img src="img/link.png" alt=""></button>
+                    <button class="botao-noticia">Ler Noticia</button>
+                </figure>
+            </div>
+
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

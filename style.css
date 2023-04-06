@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html {
+    width: 100%;
+    font-size: 16px;
+}
+.header {
+    background-color: #fff;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+    height: 8vh;
+    padding: 8px 12px;
+    border-radius: 0;
+}
+nav ul {
+    display: flex;
+}
+ul li {
+    list-style-type: none;
+    margin: 5px 30px;
+}
+#header figure {
+    padding: 15px;
+    width: auto;
+    margin-left: 2%;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+header {
+    position: relative;
+    background: blue url('img/fundo-diretor\ 1.png') no-repeat center center;
+    height: 92vh;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 2% 0;
+}
+.nav-menu {
+    display: flex;
+    background-color: #fff;
+    height: max-content;
+    padding: 8px 12px;
+    border: 1px solid #Fff;
+    border-radius: 25px;
+}
+#flecha {
+    display: flex;
+    background-color: #fff;
+    height: max-content;
+    padding: 10px 20px;
+    font-size: 1.3em;
+    border: 1px solid #Fff;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.nav-flecha {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+header button.nav-menu {
+    position: absolute;
+    top: 4%;
+    right: 5%;
+}
+
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+#conteudo-principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#conteudo-principal .conjunto {
+    width: 50%;
+    position: relative;
+    cursor: pointer;
+}
+.conjunto div:first-child {
+    background-color: #fff;
+}
+.texto-conjunto {
+    position: absolute;
+    width: 80%;
+    font-size: 1.5em;
+    text-align: justify;
+    top: 25%;
+    left: 10%;
+    color: #000;
+    z-index: 100;
+    display: none;
+}
+#conteudo-principal div figure .imagem-conteudo {
+    width: 100%;
+}
+.fig-img {
+    padding: 15px;
+    height: 100%;
+}
+.link {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #fff;
+    border: none;
+    visibility: hidden;
+}
+.link-celular,.botao-noticia  {
+    visibility: hidden;
+}
+.autor {
+    position: absolute;
+    bottom: 12%;
+    left: 5%;
+    color: #000;
+    visibility: hidden;
+}
+
+@media (max-width: 700px) {
+    header {
+        overflow-x: hidden;
+    }
+    nav ul:not(ul li:last-child) {
+        padding: 10px 0;
+        display: flex;
+        position: absolute;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        right: 0;
+        top: 0;
+        width: 80%;
+        background-color: #fff;
+        border-bottom-left-radius: 100px;
+    }
+    ul li {
+        flex-direction: column;
+        margin: 12px 30px;
+    }
+    header figure {
+        visibility: hidden;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+    .nav-menu {
+        width: auto;
+        cursor: pointer;
+        text-align: end;
+        height: 0;
+        margin: 0;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+    }
+    main {
+        width: 95%;
+    }
+    #conteudo-principal {
+        flex-direction: column;
+    }
+    #conteudo-principal div.conjunto {
+        width: 100%;
+        padding: 10px 0;
+    }
+    #conteudo-principal div figure .link img,.conjunto figure {
+        width: 100%;
+        text-align: center;
+    }
+    .autor,.link-celular {
+        visibility: visible;
+        bottom: -4px;
+    }
+    .link-celular {
+        position: absolute;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        left: 32%;
+        border-radius: 30px;
+        padding: 4px;
+    }
+    .link-celular img {
+        background-color: #fff;
+        width: 12px;
+    }
+    .autor {
+        width: 25%;
+        font-size: 12px;
+        padding: 4px;
+        margin: 0 8px 2px 0px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        color: #000;
+    }
+    .autor img {
+        width: 12px;
+        margin-right: 3px;
+    }
+    .botao-noticia {
+        visibility: visible;
+        position: absolute;
+        width: 25%;
+        padding: 4px;
+        bottom: -4px;
+        right: 5%;
+        background-color: #fff;
+        border: 1px solid #ccc;
+    }
+}
