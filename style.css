@@ -30,13 +30,16 @@ ul li {
     width: auto;
     margin-left: 2%;
 }
+.header img {
+    margin-left: 15px;
+}
 a {
     text-decoration: none;
     color: #000;
 }
 header {
     position: relative;
-    background: blue url('img/fundo-diretor\ 1.png') no-repeat center center;
+    background: blue url('img/imageem-fundo.jpg') no-repeat center center;
     height: 92vh;
     background-attachment: fixed;
     background-size: cover;
@@ -132,6 +135,7 @@ main {
 @media (max-width: 700px) {
     header {
         overflow-x: hidden;
+        height: 62vh;
     }
     nav ul:not(ul li:last-child) {
         padding: 10px 0;
